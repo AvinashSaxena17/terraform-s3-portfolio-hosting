@@ -43,23 +43,26 @@ The solution automates the provisioning of AWS resources, ensuring repeatability
 🪣 3. Created a Randomized S3 Bucket & Cofigured Ownership Preferrence:
 -  To avoid name collisions and ensure uniqueness:
 -  use Variable / name of an unique bucket.
+-  Ownership controls were configured to **BucketOwnerPreferred** to retain full control over uploaded objects.
 
 ![App Screenshot](https://github.com/AvinashSaxena17/terraform-s3-portfolio-hosting/blob/232025fc63ca61da8fe36e6e9e310ce46a335385/s3-images/s3-bucket-source.png)
 
 🔐 4. Configured Public Access
-- To allow public read access to static files:
-
+- Allowed public read access to static files by updating the bucket policy and disabling block public access settings. This made it possible to host and share files like HTML, CSS, and images on the internet.
 
 ![App Screenshot](https://github.com/AvinashSaxena17/terraform-s3-portfolio-hosting/blob/232025fc63ca61da8fe36e6e9e310ce46a335385/s3-images/s3-public%20access.png)
 
 ![App Screenshot](https://github.com/AvinashSaxena17/terraform-s3-portfolio-hosting/blob/232025fc63ca61da8fe36e6e9e310ce46a335385/s3-images/s3-acl.png)
 
 
-🌐 5. Enabled Static Website Hosting
+🌐 5. Enabled Static Website Hosting:
+
+Turned on static website hosting for the S3 bucket by specifying an index and error document. This allowed the bucket to serve web pages directly over the internet.
+
 
 ![App Screenshot](https://github.com/AvinashSaxena17/terraform-s3-portfolio-hosting/blob/232025fc63ca61da8fe36e6e9e310ce46a335385/s3-images/s3-hosting.png)
 
-📤 6. Uploaded All Files from DevFolio/
+📤 6. Uploaded All Images, CSS and JS files including index.html and error.hmtl:
 
 ![App Screenshot](https://github.com/AvinashSaxena17/terraform-s3-portfolio-hosting/blob/232025fc63ca61da8fe36e6e9e310ce46a335385/s3-images/s3-files-upload.png)
 
@@ -81,7 +84,7 @@ Terrafor apply -auto-approve
 Terraform provisioned everything, uploaded my site, and gave me a live URL like:
 
 ```
-
+avi-demo-my-bucket.s3-website.ap-south-1.amazonaws.com
 ```
 
 
@@ -102,14 +105,13 @@ Terraform provisioned everything, uploaded my site, and gave me a live URL like:
 
 ## 🧠 What I Learned
 
-- Using bucket polciies and ACL's.
-
+- How to use Terraform to automate the provisioning of an S3 bucket with static website hosting enabled.
+- Gain hands-on experience with configuring bucket policies, ACLs, and public access settings to securely allow public read access.
 
 ## 📌 Future Improvements
 
-- Add SSL using ACM and redirect HTTP to HTTPS.
-- Integrate Route 53 to map a custom domain
-
+- Integrate CloudFront as a CDN to improve performance and enable HTTPS with a custom domain.
+- Add monitoring and logging using AWS CloudWatch or S3 access logs to track usage and troubleshoot issues.
 
 
 
