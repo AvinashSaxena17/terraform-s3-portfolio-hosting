@@ -35,41 +35,38 @@ The solution automates the provisioning of AWS resources, ensuring repeatability
 #
 ### ⚙️ 2. Created the Terraform Configuration (main.tf)
 
-✅ Initializes Providers:
+✅ Initializes aws Provider:
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![App Screenshot](https://github.com/AvinashSaxena17/terraform-s3-portfolio-hosting/blob/232025fc63ca61da8fe36e6e9e310ce46a335385/s3-images/s3-terraform%20provider.png)
 
-✅ Configures AWS Provider:
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
-
-🪣 3. Created a Randomized S3 Bucket
+🪣 3. Created a Randomized S3 Bucket & Cofigured Ownership Preferrence:
 -  To avoid name collisions and ensure uniqueness:
+-  use Variable / name of an unique bucket.
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![App Screenshot](https://github.com/AvinashSaxena17/terraform-s3-portfolio-hosting/blob/232025fc63ca61da8fe36e6e9e310ce46a335385/s3-images/s3-bucket-source.png)
 
-🔐 4. Configured Ownership & Public Access
+🔐 4. Configured Public Access
 - To allow public read access to static files:
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![App Screenshot](https://github.com/AvinashSaxena17/terraform-s3-portfolio-hosting/blob/232025fc63ca61da8fe36e6e9e310ce46a335385/s3-images/s3-public%20access.png)
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![App Screenshot](https://github.com/AvinashSaxena17/terraform-s3-portfolio-hosting/blob/232025fc63ca61da8fe36e6e9e310ce46a335385/s3-images/s3-acl.png)
 
 
 🌐 5. Enabled Static Website Hosting
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![App Screenshot](https://github.com/AvinashSaxena17/terraform-s3-portfolio-hosting/blob/232025fc63ca61da8fe36e6e9e310ce46a335385/s3-images/s3-hosting.png)
 
 📤 6. Uploaded All Files from DevFolio/
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![App Screenshot](https://github.com/AvinashSaxena17/terraform-s3-portfolio-hosting/blob/232025fc63ca61da8fe36e6e9e310ce46a335385/s3-images/s3-files-upload.png)
 
 
 📤 8. Output the Website URL (outputs.tf)
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![App Screenshot](https://github.com/AvinashSaxena17/terraform-s3-portfolio-hosting/blob/4e7f2bce9329f375fc6dc2997869e2239b5d2fe8/s3-images/s3-output-1.png)
 
 
 🧪 Final Result
@@ -90,12 +87,17 @@ Terraform provisioned everything, uploaded my site, and gave me a live URL like:
 
 ## 🌍 Output:
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![App Screenshot](https://github.com/AvinashSaxena17/terraform-s3-portfolio-hosting/blob/4e7f2bce9329f375fc6dc2997869e2239b5d2fe8/s3-images/s3-output.png))
 
 
-- 🎉 My portfolio was live on AWS
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+
+- 🎉 My portfolio was live hosted on AWS :
+
+![App Screenshot](https://github.com/AvinashSaxena17/terraform-s3-portfolio-hosting/blob/4e7f2bce9329f375fc6dc2997869e2239b5d2fe8/s3-images/s3-url-aws-console.png)
+
+
+![App Screenshot](https://github.com/AvinashSaxena17/terraform-s3-portfolio-hosting/blob/4e7f2bce9329f375fc6dc2997869e2239b5d2fe8/s3-images/s3-webiste-host.png)
 
 
 ## 🧠 What I Learned
