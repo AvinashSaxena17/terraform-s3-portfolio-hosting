@@ -97,7 +97,7 @@ Terraform provisioned everything, uploaded my site, and gave me a live URL like:
 ![App Screenshot](https://github.com/AvinashSaxena17/terraform-s3-portfolio-hosting/blob/4e7f2bce9329f375fc6dc2997869e2239b5d2fe8/s3-images/s3-url-aws-console.png)
 
 
-![App Screenshot](https://github.com/AvinashSaxena17/terraform-s3-portfolio-hosting/blob/4e7f2bce9329f375fc6dc2997869e2239b5d2fe8/s3-images/s3-webiste-host.png)
+![App Screenshot](https://github.com/AvinashSaxena17/terraform-s3-portfolio-hosting/blob/e885af385e952293434cc35b74f50e617781ac2b/s3-images/s3-webiste-host.png)
 
 
 ## 🧠 What I Learned
